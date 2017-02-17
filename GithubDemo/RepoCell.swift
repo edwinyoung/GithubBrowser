@@ -9,7 +9,7 @@
 import UIKit
 
 class RepoCell: UITableViewCell {
-
+	
 	
 	@IBOutlet weak var userAvatar: UIImageView!
 	@IBOutlet weak var repoName: UILabel!
@@ -18,15 +18,15 @@ class RepoCell: UITableViewCell {
 	@IBOutlet weak var stars: UILabel!
 	@IBOutlet weak var forks: UILabel!
 	
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+	override func awakeFromNib() {
+		super.awakeFromNib()
+		// Initialization code
+	}
+	
+	override func setSelected(_ selected: Bool, animated: Bool) {
+		super.setSelected(selected, animated: animated)
+		
+		// Configure the view for the selected state
+	}
+	
 }
