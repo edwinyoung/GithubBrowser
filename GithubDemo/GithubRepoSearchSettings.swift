@@ -12,8 +12,10 @@ import Foundation
 class GithubRepoSearchSettings {
 	var searchString: String?
 	var minStars = 0
+    
 	
-	init() {
-		
+    init(dict: NSDictionary) {
+		searchString = dict["searchString"] as? String
+        minStars = (dict["minStars"] as? Int ?? 0)!
 	}
 }
